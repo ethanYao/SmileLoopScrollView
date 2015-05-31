@@ -10,4 +10,6 @@
 
 @interface UIView (Extension)
 
++ (UIImage *)imageWithColor:(UIColor *)color;
+
 @end

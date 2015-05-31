@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18217C871B1B8883005A9754 /* LoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18217C831B1B8883005A9754 /* LoopScrollView.m */; };
+		18217C881B1B8883005A9754 /* LoopScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18217C851B1B8883005A9754 /* LoopScrollViewCell.m */; };
+		18217C891B1B8883005A9754 /* LoopScrollViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18217C861B1B8883005A9754 /* LoopScrollViewCell.xib */; };
 		1847B1041B1AC6880075C9CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847B1031B1AC6880075C9CF /* main.m */; };
 		1847B1071B1AC6880075C9CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847B1061B1AC6880075C9CF /* AppDelegate.m */; };
 		1847B10A1B1AC6880075C9CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847B1091B1AC6880075C9CF /* ViewController.m */; };
@@ -14,6 +17,7 @@
 		1847B10F1B1AC6880075C9CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1847B10E1B1AC6880075C9CF /* Images.xcassets */; };
 		1847B1121B1AC6880075C9CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1847B1101B1AC6880075C9CF /* LaunchScreen.xib */; };
 		1847B11E1B1AC6880075C9CF /* SmileLoopScrollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847B11D1B1AC6880075C9CF /* SmileLoopScrollTests.m */; };
+		1847B1331B1AC9490075C9CF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847B1321B1AC9490075C9CF /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18217C821B1B8883005A9754 /* LoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopScrollView.h; sourceTree = "<group>"; };
+		18217C831B1B8883005A9754 /* LoopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopScrollView.m; sourceTree = "<group>"; };
+		18217C841B1B8883005A9754 /* LoopScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopScrollViewCell.h; sourceTree = "<group>"; };
+		18217C851B1B8883005A9754 /* LoopScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopScrollViewCell.m; sourceTree = "<group>"; };
+		18217C861B1B8883005A9754 /* LoopScrollViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoopScrollViewCell.xib; sourceTree = "<group>"; };
 		1847B0FE1B1AC6870075C9CF /* SmileLoopScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileLoopScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1847B1021B1AC6880075C9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1847B1031B1AC6880075C9CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +49,9 @@
 		1847B1171B1AC6880075C9CF /* SmileLoopScrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileLoopScrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1847B11C1B1AC6880075C9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1847B11D1B1AC6880075C9CF /* SmileLoopScrollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmileLoopScrollTests.m; sourceTree = "<group>"; };
+		1847B1271B1AC6A80075C9CF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1847B1311B1AC9490075C9CF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		1847B1321B1AC9490075C9CF /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18217C811B1B8883005A9754 /* LoopScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				18217C821B1B8883005A9754 /* LoopScrollView.h */,
+				18217C831B1B8883005A9754 /* LoopScrollView.m */,
+				18217C841B1B8883005A9754 /* LoopScrollViewCell.h */,
+				18217C851B1B8883005A9754 /* LoopScrollViewCell.m */,
+				18217C861B1B8883005A9754 /* LoopScrollViewCell.xib */,
+			);
+			path = LoopScrollView;
+			sourceTree = "<group>";
+		};
 		1847B0F51B1AC6870075C9CF = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +105,11 @@
 		1847B1001B1AC6870075C9CF /* SmileLoopScroll */ = {
 			isa = PBXGroup;
 			children = (
-				1847B1051B1AC6880075C9CF /* AppDelegate.h */,
-				1847B1061B1AC6880075C9CF /* AppDelegate.m */,
+				18217C811B1B8883005A9754 /* LoopScrollView */,
 				1847B1081B1AC6880075C9CF /* ViewController.h */,
 				1847B1091B1AC6880075C9CF /* ViewController.m */,
-				1847B10B1B1AC6880075C9CF /* Main.storyboard */,
-				1847B10E1B1AC6880075C9CF /* Images.xcassets */,
-				1847B1101B1AC6880075C9CF /* LaunchScreen.xib */,
+				1847B1311B1AC9490075C9CF /* UIView+Extension.h */,
+				1847B1321B1AC9490075C9CF /* UIView+Extension.m */,
 				1847B1011B1AC6880075C9CF /* Supporting Files */,
 			);
 			path = SmileLoopScroll;
@@ -96,8 +118,14 @@
 		1847B1011B1AC6880075C9CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1847B10B1B1AC6880075C9CF /* Main.storyboard */,
+				1847B10E1B1AC6880075C9CF /* Images.xcassets */,
+				1847B1101B1AC6880075C9CF /* LaunchScreen.xib */,
+				1847B1051B1AC6880075C9CF /* AppDelegate.h */,
+				1847B1061B1AC6880075C9CF /* AppDelegate.m */,
 				1847B1021B1AC6880075C9CF /* Info.plist */,
 				1847B1031B1AC6880075C9CF /* main.m */,
+				1847B1271B1AC6A80075C9CF /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,6 +230,7 @@
 				1847B10D1B1AC6880075C9CF /* Main.storyboard in Resources */,
 				1847B1121B1AC6880075C9CF /* LaunchScreen.xib in Resources */,
 				1847B10F1B1AC6880075C9CF /* Images.xcassets in Resources */,
+				18217C891B1B8883005A9754 /* LoopScrollViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1847B1331B1AC9490075C9CF /* UIView+Extension.m in Sources */,
+				18217C881B1B8883005A9754 /* LoopScrollViewCell.m in Sources */,
+				18217C871B1B8883005A9754 /* LoopScrollView.m in Sources */,
 				1847B10A1B1AC6880075C9CF /* ViewController.m in Sources */,
 				1847B1071B1AC6880075C9CF /* AppDelegate.m in Sources */,
 				1847B1041B1AC6880075C9CF /* main.m in Sources */,
@@ -347,6 +379,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SmileLoopScroll/PrefixHeader.pch";
 				INFOPLIST_FILE = SmileLoopScroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +391,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SmileLoopScroll/PrefixHeader.pch";
 				INFOPLIST_FILE = SmileLoopScroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +452,7 @@
 				1847B1231B1AC6880075C9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1847B1241B1AC6880075C9CF /* Build configuration list for PBXNativeTarget "SmileLoopScrollTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +461,7 @@
 				1847B1261B1AC6880075C9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,7 +9,12 @@
 #ifndef SmileLoopScroll_PrefixHeader_pch
 #define SmileLoopScroll_PrefixHeader_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/**
+ *  randomColor & screenSize
+ */
+#define LSColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define LSScreenWidth [UIScreen mainScreen].bounds.size.width
+#define LSScreenHeight [UIScreen mainScreen].bounds.size.height
+#define LSRandomColor LSColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
 #endif
