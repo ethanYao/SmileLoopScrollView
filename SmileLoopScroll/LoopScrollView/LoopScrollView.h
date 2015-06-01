@@ -25,6 +25,14 @@
 
 @property (nonatomic, strong) NSArray *loops;
 
+@property (nonatomic, strong) NSArray *images;
+
+@property (nonatomic, assign) NSTimeInterval scrollTime;
+
+@property (nonatomic, strong) UIColor *pageTintColor;
+
+@property (nonatomic, strong) UIColor *currentPageTintColor;
+
 @property (weak, nonatomic) id <LoopScrollViewDelegate> loopDelegate;
 
 - (void)loadLoopScrollView;

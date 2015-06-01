@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F045DF12-46FD-4A52-9AAF-775B9AAF9E58</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SmileLoopScroll</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A1D83596CC571568F7377A84806EDCEBDDA8496F</key>
 		<string>github.com:ethanYao/SmileLoopScrollView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SmileLoopScroll.xcodeproj/project.xcworkspace</string>
+	<string>SmileLoopScroll.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A1D83596CC571568F7377A84806EDCEBDDA8496F</key>

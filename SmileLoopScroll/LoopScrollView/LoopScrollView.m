@@ -8,7 +8,6 @@
 
 #import "LoopScrollView.h"
 #import "LoopScrollViewCell.h"
-#import "UIView+Extension.h"
 
 #define LSIdentifier @"loop"
 #define LSMaxSections 100
@@ -24,7 +23,6 @@
 @end
 
 @implementation LoopScrollView
-
 
 - (void)loadLoopScrollView
 {
@@ -47,7 +45,7 @@
     
     
     // set collectionView frame & layout
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, LSScreenWidth, self.bounds.size.height) collectionViewLayout:flow];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:flow];
     
     
     //  load xib
@@ -62,16 +60,16 @@
     flow.itemSize = self.collectionView.frame.size;
     
     // set pageControl
-    UIPageControl *pageView = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.bounds.size.height - 20, LSScreenWidth, 20)];
+    UIPageControl *pageView = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.bounds.size.height - 20, self.bounds.size.width, 20)];
     
     /*****************************  set pageView color  **********************************/
     
-    pageView.pageIndicatorTintColor = [UIColor blueColor];
-    pageView.currentPageIndicatorTintColor = [UIColor redColor];
+    pageView.pageIndicatorTintColor = _pageTintColor;
+    pageView.currentPageIndicatorTintColor = _currentPageTintColor;
     
     /*****************************  set pageView color  **********************************/
     
-    pageView.numberOfPages = _loops.count;
+    pageView.numberOfPages = _images.count;
     self.pageView = pageView;
     [self addSubview:pageView];
     
@@ -94,7 +92,7 @@
  */
 - (void)startTimer
 {
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:_scrollTime target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
     
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
     
@@ -138,7 +136,7 @@
     // calculate the indexPath of the next picture & array & position
     NSInteger nextItem = currentPage.item + 1;
     NSInteger nextSection = currentPage.section;
-    if (nextItem >= self.loops.count) {
+    if (nextItem >= _images.count) {
         
         nextItem = 0;
         nextSection++;
@@ -153,7 +151,7 @@
 #pragma mark - dataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return _loops.count;
+    return _images.count;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -166,7 +164,7 @@
 {
     LoopScrollViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:LSIdentifier forIndexPath:indexPath];
     
-    [cell setupCellTitle:_loops[indexPath.item] andImage:[UIView imageWithColor:LSRandomColor]];
+    [cell setupCellTitle:_loops[indexPath.item] andImage:_images[indexPath.item]];
     
     return cell;
 }
@@ -194,7 +192,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     // plus 0.5 to round,
-    int page = (int)((scrollView.contentOffset.x)/(LSScreenWidth) + 0.5)%(self.loops.count);
+    int page = (int)((scrollView.contentOffset.x)/(self.bounds.size.width) + 0.5)%(_images.count);
     self.pageView.currentPage = page;
 }
 

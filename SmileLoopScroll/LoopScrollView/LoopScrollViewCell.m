@@ -23,7 +23,6 @@
 - (void)setupCellTitle:(NSString *)title andImage:(UIImage *)image
 {
     self.label.text = title;
-    self.label.textColor = LSRandomColor;
     self.imageIcon.image = image;
 }
 
