@@ -16,7 +16,7 @@ Drag the source files under floder `LoopScrollView` to your project. Just import
 ```objective-c
     // create a view and set the size of the view you need.
     LoopScrollView *loopView = [[LoopScrollView alloc] initWithFrame:CGRectMake(0, 200, self.view.bounds.size.width, 200)];
-    // this loops array is set the title at center view when you want, you can ignore this array and set nil if you don't want      it 
+    // this loops array is set the title at center view when you want, you can ignore this array and set nil if you don't want it 
     loopView.loops = [NSArray arrayWithObjects:@"1", @"2", @"3",  @"4", @"5", @"6", @"7", @"8", @"^.^", nil];
     // make your images array assign to this property
     loopView.images = [self setupImageArrayCount:loopView.loops.count];
@@ -27,4 +27,4 @@ Drag the source files under floder `LoopScrollView` to your project. Just import
     loopView.currentPageTintColor = [UIColor redColor];
 ```
 ##Wishes
-I consider this little framework can't do more things,but it can help us to complete some same view such as loop scroll  or automatic scroll view etc.This version also exist many inconvenient situation when you using it, and I hope you can come up with your idea to make this framework changes the better.Finally,the best wishes for you.
+I consider this little framework can't do more things, but it can help us to complete some same view such as loop scroll  or automatic scroll view etc. This version also exist many inconvenient situation when you using it, and I hope you can come up with your idea to make this framework changes the better. Finally, the best wishes for you.
