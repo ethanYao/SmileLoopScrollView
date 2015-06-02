@@ -2,6 +2,8 @@
 The Framework can help you implementation loop scroll the view what you want. It used the collectionView to make this framework.
 ##Installation
 Drag the source files under floder `LoopScrollView` to your project. Just import the file: `LoopScrollView.h`.
+##Shows
+![image](http://user.qzone.qq.com/519527334/photo/V11cKm1l2DeXNe/batchid/1433221541239000).
 ##Features
 * It can `loop scroll` the image in the view.
 * It also can `automatic` scroll when you don't touch the image on the screen.
