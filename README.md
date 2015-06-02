@@ -9,10 +9,8 @@ Drag the source files under floder `LoopScrollView` to your project. Just import
 * This framework was used `collectionView` to be implemented, then you can't care about the `reuse` situation.
 ##Example & Use
 
----
 ###Creat a loopScrollView in your custom view or controller:
 
----
 
 ```objective-c
     // create a view and set the size of the view you need.
