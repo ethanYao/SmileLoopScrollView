@@ -32,7 +32,7 @@
 - (IBAction)buttonClick:(UIButton *)sender {
     
     LoopScrollView *loopView = [[LoopScrollView alloc] initWithFrame:CGRectMake(0, 200, self.view.bounds.size.width, 200)];
-    loopView.loops = [NSArray arrayWithObjects:@"广", @"州", @"恒",  @"大", @"威", @"武", @"霸", @"气", @"^.^", nil];
+    loopView.loops = [NSArray arrayWithObjects:@"广", @"州", @"恒",  @"大", @"五", @"连", @"霸", @"^.^", nil];
     loopView.images = [self setupImageArrayCount:loopView.loops.count];
     loopView.scrollTime = 1.0f;
     loopView.pageTintColor = [UIColor blueColor];
